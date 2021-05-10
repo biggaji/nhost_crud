@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/biggaji/nhost_crud#readme",
   "dependencies": {
+    "dotenv": "^9.0.2",
     "express": "^4.17.1",
-    "nhost-js-sdk": "^3.1.0"
+    "nhost-js-sdk": "^3.1.0",
+    "express-handlebars": "^5.2.0"
   },
   "devDependencies": {
     "@types/express": "github:types/express",
