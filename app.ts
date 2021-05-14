@@ -3,6 +3,7 @@ import express, {Request, Response, NextFunction, Application, Router} from 'exp
 import exphbs from 'express-handlebars';
 import router  from './src/routers/index';
 import path from 'path';
+import * as bodyparser from 'body-parser';
 
 dotenv.config();
 
@@ -10,8 +11,8 @@ const app:Application = express();
 
 const indexRoute:Router = router;
 
-// app.use(urlencoded({ extended: false }));
-// app.use(json());
+app.use(bodyparser.urlencoded({ extended : false }));
+app.use(bodyparser.json());
 
 // setup static file handler
 
